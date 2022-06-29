@@ -4,12 +4,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <title>
-    {% if page.layout != 'home' %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - {{ site.title }}{% else %}
-    {{ site.title }}{% endif %}
+    {% if page.layout != 'home' %}
+
+	  {% if page.title %}
+	    {{ page.title }}
+
+	  {% else %}
+	    {{ site.title }}
+
+	  {% endif %}
+
+	  - {{ site.title }}
+
+	{% else %}
+      {{ site.title }}
+
+	{% endif %}
+
   </title>
+
+  <!-- https://longqian.me/2017/02/09/github-jekyll-tag/ -->
+  {% if site.tags != "" %}
+    {% include tag_collect.html %}
+
+  {% endif %}
+
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  <script type="text/javascript" src="{{ page.js_file | relative_url }}"></script>
-
+  <script type="text/javascript" src="{{ page.js_file | relative_url }}">
+  </script>
   {% seo %}
-
 </head>
