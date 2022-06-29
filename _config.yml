@@ -9,6 +9,7 @@ plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-last-modified-at
 
 sass:
   style: compressed
