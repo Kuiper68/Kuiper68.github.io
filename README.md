@@ -1,4 +1,4 @@
-<img src="assets/images/site_main_title_purple.png" class="detail_header">
+<img src="assets/images/main/site_main_title_purple.png" class="detail_header">
 <div align="right">
   <i>- Powered by <b>Jekyll Shell Theme</b></i>
 </div>
