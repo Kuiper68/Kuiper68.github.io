@@ -4,7 +4,6 @@ description: "이론적인 내용들을 직접 구현해보고 정리하기 위�
 github_username: "kuiper68"
 baseurl: ""
 url: "https://kuiper68.github.io"
-theme: jekyll-shell-theme
 
 plugins:
   - jemoji
