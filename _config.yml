@@ -1,9 +1,10 @@
-title: "jekyll-shell-theme"
+title: "implementation_challenge"
 tagline: "A jekyll theme that looks like a shell/terminal"
-description: "This is a preview of jekyll-shell-theme."
-github_username: tareqdandachi
-baseurl: "/jekyll-shell-theme"
-url: "https://tareqdandachi.github.io"
+description: "이론적인 내용들을 직접 구현해보고 정리하기 위해 만든 사이트입니다."
+github_username: "kuiper68"
+baseurl: ""
+url: "https://kuiper68.github.io"
+theme: jekyll-shell-theme
 
 plugins:
   - jemoji
@@ -17,8 +18,9 @@ highlighter: rouge
 
 header_pages:
   - index.md
-  - read-me.md
-  - preview.md
+  - blog.md
+  - tags.md
+  - about.md
 
 # set the size of the text to 'large' or 'small', default is small
 font-size: small

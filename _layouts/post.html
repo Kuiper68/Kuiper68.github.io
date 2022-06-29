@@ -1,10 +1,47 @@
 ---
 layout: default
-title:  "POSTS"
 ---
 
-{%- if page.detail_image -%}<img class="detail_header" src="{{ page.detail_image }}">{%- endif -%}
+{%- if page.detail_image -%}
+  <img class="detail_header" src="{{ page.detail_image }}">
 
-<h1>{{ page.post-title }}</h1>
+{%- endif -%}
+
+<div style="text-align: left;">
+  <h1>{{ page.post-title }}</h1>
+</div>
+<br>
+
+<div>
+  description: {{ page.description }}
+</div>
+<br>
+
+<div style="text-align: left;">
+  {% assign date_split = page.date | split: " " %}
+  <i>
+	created: {{ date_split[0] }}
+	<br>
+
+	last_modified_at: {{ page.last_modified_at | date: '%Y-%m-%d' }}
+  </i>
+</div>
+<div style="text-align: left;">
+  <span>
+    tags:
+
+    {% for tag in page.tags %}
+      <a href="/tags/{{ tag }}">
+		<code>
+		  <nobr>{{ tag }}</nobr>
+	    </code>
+	  </a>
+	  &nbsp;
+
+    {% endfor %}
+
+  </span>
+</div>
+<br>
 
 {{ content }}

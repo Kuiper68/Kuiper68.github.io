@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<img class="home_header" src="/assets/images/main/site_main_title_green.png">
+
+<!-- https://longqian.me/2017/02/09/github-jekyll-tag/ -->
+{% include tag_cloud.html %}
+<br>
+
+<h3>{{ page.title }}</h3>
+<hr>
+<ul>{% assign lastpost = site.tags[page.tags] | last %}
+  {% for post in site.tags[page.tags] %}
+	<div class="post-viewer">
+      <div class="post-content">
+        <a href="{{ post.permalink }}">
+          <span><font size=4>{{post.title}}</font></span>
+        </a>
+        <br>
+
+		{% assign date_split = post.date | split: " " %}
+		<i>
+		  created: {{ date_split[0] }}
+        </i>
+        <br>
+
+        tags:
+
+        {% for tag in post.tags %}
+  		  <a href="/tags/{{ tag }}">
+  		    <code>
+  			  <nobr>{{ tag }}</nobr>
+  		    </code>
+  		  </a>
+  		  &nbsp;
+
+        {% endfor %}
+
+        <br>
+        <br>
+
+        <div class="post-desc">&nbsp;{{post.description}}</div>
+	  </div>
+      <div class="post-thumbnail">
+        <a href="{{ post.permalink }}">
+          <img class="thumbnail"; src="{{ post.detail_image }}">
+        </a>
+      </div>
+    </div>
+
+	{% if post == lastpost %}
+
+	  {% break %}
+
+	{% endif %}
+
+	<hr>
+
+  {% endfor %}
+
+</ul>
