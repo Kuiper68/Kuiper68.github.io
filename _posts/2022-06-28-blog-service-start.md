@@ -2,7 +2,8 @@
 layout: post
 title: 깃허브 블로그 서비스 시작
 post-title: 깃허브 블로그 서비스 시작
-date: 2022-06-28-12 08:34:00 +0900
+date: 2022-06-28 08:34:00 +0900
+# last_modified_at:
 permalink: /blog/blog_service_start.html
 permalink_name: /blog/blog_service_start
 category: blog
