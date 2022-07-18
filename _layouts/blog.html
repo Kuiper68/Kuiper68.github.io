@@ -26,6 +26,8 @@ layout: default
 		    created: {{ date_split[0] }}
 		  </i>
 		  <br>
+
+		  <div class="overflow-tag">
 		  tags:
 
 		  {% for tag in post.tags %}
@@ -38,7 +40,7 @@ layout: default
 
 		  {% endfor %}
 
-		  <br>
+		  </div>
 		  <br>
 
           <div class="post-desc">{{post.description}}</div>

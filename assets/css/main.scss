@@ -64,6 +64,7 @@ ul :not(.menu) > ul > li:before { content: "*";  margin-right: 9px; }
 .post-thumbnail { grid-column: 2; }
 .thumbnail { width:100%; height:100%; object-fit: cover; }
 .post-desc { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 400px; height: 25px; }
+.overflow-tag { height: 25px; overflow: hidden; }
 pre.highlight { white-space: pre-wrap; }
 
 /* ERROR PAGES */
