@@ -20,10 +20,10 @@ layout: default
 <div style="text-align: left;">
   {% assign date_split = page.date | split: " " %}
   <i>
-	created: {{ date_split[0] }}
+	<span>created: {{ date_split[0] }}</span>
 	<br>
 
-	last_modified_at: {{ page.last_modified_at | date: '%Y-%m-%d' }}
+	<span id='last-modified'/>
   </i>
 </div>
 <div style="text-align: left;">
