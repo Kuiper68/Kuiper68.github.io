@@ -30,6 +30,7 @@ group :jekyll_plugins do
   gem 'jekyll-github-metadata' # 추가
 end
 ```
+<br>
 
 ```yml
 # _config.yml
