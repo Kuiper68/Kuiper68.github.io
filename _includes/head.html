@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <script type="text/javascript" src="{{ page.js_file | relative_url }}">
   </script>
+
   <!-- https://ryanfb.github.io/etc/2020/04/27/last_modified_dates_for_github_pages_jekyll_posts.html -->
   <script type="text/javascript">
     function setModifiedDate() {
@@ -45,8 +46,12 @@
 
           .then((commits) => {
             var modified = commits[0]['commit']['committer']['date'].slice(0,10);
-            if(modified != "{{ page.date | date: "%Y-%m-%d" }}") {
+
+            if (modified != "{{ page.date | date: "%Y-%m-%d" }}") {
               document.getElementById('last-modified').textContent = "Last Modified: " + modified;
+
+            } else {
+              document.getElementById('last-modified').textContent = "Last Modified: {{ page.date | date: "%Y-%m-%d" }}"
             }
 
           });
