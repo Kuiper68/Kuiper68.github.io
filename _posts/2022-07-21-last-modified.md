@@ -30,6 +30,7 @@ group :jekyll_plugins do
   gem 'jekyll-github-metadata' # 추가
 end
 ```
+<br>
 
 ```yml
 # _config.yml
@@ -46,7 +47,7 @@ plugins:
 &nbsp; 플러그인 사용을 위해 일단은 위와같이 파일을 변경합니다. 위의 변경사항을 사이트에 적용하려면 아마도 ``bundle install``을 한번 실행해야 할 것입니다. 그리고 마지막 수정일자 표기를 위해 아래 함수를 ``_include/head.html``에 작성합니다.
 
 ```html
-<!-- _include/head.html -->
+{% raw %}<!-- _include/head.html -->
 
 ...
 <script type="text/javascript">
@@ -71,7 +72,7 @@ plugins:
 
   }
 </script>
-...
+...{% endraw %}
 ```
 <br>
 
