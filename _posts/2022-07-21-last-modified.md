@@ -4,8 +4,8 @@ title: 마지막 수정일자 표기
 post-title: 마지막 수정일자 표기
 date: 2022-07-21 11:03:00 +0900
 # last_modified_at:
-permalink: /blog/jekyll_themes.html
-permalink_name: /blog/jekyll_themes
+permalink: /blog/last_modified.html
+permalink_name: /blog/last_modified
 category: blog
 description: 블로그 생성 도중 발생한 이슈였던 마지막 수정일자 자동표기 방법에 대해 명시합니다.
 tags: [liquid, html, jekyll, java_script]
