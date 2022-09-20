@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 하노이 타워
+title: PS - 하노이 타워
 post-title: 하노이 타워
 date: 2022-09-07 02:18:00 +0900
 permalink: /blog/hanoi_tower.html
 permalink_name: /blog/hanoi_tower
 category: blog
 description: 코딩 테스트 입문 문제 중 하나인 하노이 타워 알고리즘 입니다. 보통 재귀함수를 통해 구현합니다. 여기서는 다른 방법으로 자료구조 스택 을 활용하여 구현하는 방법을 설명합니다. 코드는 파이썬으로 작성되었습니다.
-tags: [code_test, algorithm]
+tags: [code_test, algorithm, stack]
 
 detail_image: /assets/images/thumb/algorithm.png
 ---
@@ -290,7 +290,6 @@ def Solution(n):
                 break
 
 def main():
-
     n = int(input())
     Solution(n)
 
